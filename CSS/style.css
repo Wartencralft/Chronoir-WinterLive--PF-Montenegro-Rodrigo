@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+/* Reset, eliminar estilos de navegadores, border box para evitar scroll horizontal */
+
+body {
+    background-color: rgba(128, 128, 128, 0.61);
+}
+/* header */
+.navbar {
+    background-color:rgba(0, 0, 0, 0.616);
+    height: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.list {
+    display: flex;
+    justify-content: right;
+    padding: 12px;
+    margin-right: 50px;
+    box-sizing: border-box;
+}
+
+.list a {
+    margin: 5px;
+    color: white;
+    font-size: 20px;
+
+}
+/* header final */
+/* main */
+.banner {
+    background-color: aqua;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 900px;
+}
+
+.bannerImg {
+    width: 100%;
+    height: 100%;
+}
+
+.kuzuha {
+    padding: 10px;
+    background: linear-gradient(to right,#292626, #ffffff, #292626);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.kuzuhaImg {
+    border: rgb(255, 255, 255) solid 1px;
+
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.kanae {
+    border: rgb(255, 255, 255) solid 1px;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.text {
+    text-align: center;
+    width: 500px;
+    margin-top: 200px;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.imglink {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+}
+
+/* footer */
+
+.red__social {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.kuzuha h1 {
+    color: white;
+    position: relative;
+    left: 9.5%;
+    height: 20px;
+}
+
