@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
+
 <body>
     <header>
+
+        <div class="logo">
+            <img src="../assets/img/logo.png" alt="logo">
+        </div>
+
         <nav class="navbar">
             <ul class="list">
                 <li><a href="../index.html">Inicio</a></li>
@@ -16,11 +23,60 @@
                 <li><a href="talent-profile.html">Talent Profile</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
+
+            <div class="hamburger-menu">
+                <input id="menutoggle" type="checkbox" />
+                <label class="menubtn" for="menutoggle">
+                  <span></span>
+                </label>
+            
+                <ul class="menubox">
+                  <li><a class="menuitem" href="index.html">Inicio</a></li>
+                  <li><a class="menuitem" href="./Pages/tienda.html">Tienda</a></li>
+                  <li><a class="menuitem" href="./Pages/talent-profile.html">Tienda Profile</a></li>
+                  <li><a class="menuitem" href="./Pages/contacto.html">Contacto</a></li>
+                </ul>
+              </div>
+
         </nav>
 
     </header>
 
     <main>
+
+        <section>
+            <article class="talents">
+                <div>
+                    <h1 class="kuzuH1">Kuzuha</h1>
+
+                    <a class="imglink" href="https://www.youtube.com/channel/UCSFCh5NL4qXrAy9u-u2lX3g"><img class="kuzuhaImg"
+                            src="../assets/img/kuzuha.png" alt="kuzuha" width="300px" /></a>
+                </div>
+
+
+                <section class="text">
+                    <div class="txt">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et culpa voluptas adipisci
+                            cupiditate,
+                            expedita harum nam earum porro saepe consequuntur error amet distinctio illo omnis enim eum
+                            repellat voluptate! Aliquam.
+                        </p>
+                    </div>
+
+                </section>
+                
+                <div>
+                    <h1 class="kanaH1">Kanae</h1>
+                    <a class="imglink" href="https://www.youtube.com/c/KanaeChannel/videos"><img class="kanae" src="../assets/img/Kanae.png"
+                            alt="kanae" width="300px"></a>
+                </div>
+
+
+            </article>
+
+
+        </section>
 
     </main>
 
@@ -29,14 +85,16 @@
         <section class="red__social">
             <a href="" class="social-facebook"></a>
 
-            <a href="https://twitter.com" class="social-twitter"><img src="../assets/social-icons/twitter-logo-60.png" alt=""></a>
+            <a href="https://twitter.com" class="social-twitter"><img src="../assets/social-icons/twitter-logo-60.png"
+                    alt=""></a>
 
             <a href="" class="social-instagram"></a>
 
             <a href="" class="social-youtube"></a>
-       </section>
+        </section>
 
     </footer>
-    
+
 </body>
+
 </html>

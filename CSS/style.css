@@ -6,17 +6,28 @@
     list-style: none;
 }
 /* Reset, eliminar estilos de navegadores, border box para evitar scroll horizontal */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&display=swap');
 
-body {
-    background-color: rgba(128, 128, 128, 0.61);
-}
 /* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo img {
+  height: 45px; 
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
 .navbar {
-    background-color:rgba(0, 0, 0, 0.616);
-    height: 50px;
-    position: sticky;
-    top: 0;
-    z-index: 1;
+  display:flex;
+  padding: 10px;
 }
 
 .list {
@@ -28,15 +39,97 @@ body {
 }
 
 .list a {
-    margin: 5px;
-    color: white;
-    font-size: 20px;
-
+  margin: 5px;
+  color: white;
+  font-size: 1.3rem;
 }
+
+.list a:hover {
+  color: red;
+  transition: color 0.4s ease-in-out 0s;
+}
+
 /* header final */
+
+/* menu hamburgesa */
+.hamburger-menu {
+    display: none;
+  }
+  #menutoggle {
+    opacity: 0;
+  }
+  #menutoggle:checked + .menubtn > span {
+    transform: rotate(45deg);
+  }
+  #menutoggle:checked + .menubtn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+  }
+  #menutoggle:checked + .menubtn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menutoggle:checked ~ .menubox {
+    left: 0 !important;
+  }
+  .menubtn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    z-index: 1;
+  }
+  .menubtn > span,
+  .menubtn > span::before,
+  .menubtn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    transition-duration: .5s;
+  }
+  .menubtn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menubtn > span::after {
+    content: '';
+    top: 8px;
+  }
+  .menubox {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #000000;
+    box-shadow: 2px 2px 6px rgb(0, 0, 0);
+    transition-duration: .5s;
+  }
+  .menuitem {
+    display: block;
+    padding: 12px 24px;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+  }
+  .menuitem:hover {
+    background-color: rgba(223, 36, 80, 0.932);
+  }
+
+  /* final menu */
+
 /* main */
 .banner {
-    background-color: aqua;
     object-fit: cover;
     background-repeat: no-repeat;
     width: auto;
@@ -48,28 +141,33 @@ body {
     height: 100%;
 }
 
-.kuzuha {
+.talents {
     padding: 10px;
-    background: linear-gradient(to right,#292626, #ffffff, #292626);
+    background-image: url(../assets/img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .kuzuhaImg {
     border: rgb(255, 255, 255) solid 1px;
-
     border-radius: 15px;
     padding: 25px;
+    margin-top: 10px;
 }
 
 .kanae {
     border: rgb(255, 255, 255) solid 1px;
     border-radius: 15px;
     padding: 25px;
+    margin-top: 10px;
 }
 
-.text {
+.txt {
+    color: rgba(255, 255, 255, 0.726);
     text-align: center;
     width: 500px;
     margin-top: 200px;
@@ -93,10 +191,148 @@ body {
     background-color: black;
 }
 
-.kuzuha h1 {
+/* footer */
+
+.talents h1 {
     color: white;
-    position: relative;
-    left: 9.5%;
+    text-align: center;
     height: 20px;
+    margin-bottom: 5px;
 }
 
+/* <------Contacto------> */
+.titulo {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Noto Sans', sans-serif;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    
+}
+
+.backgroundImg {
+    background-image: url(../assets/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form {
+    width: 585px;
+    margin: auto;
+    padding: 10px 20px; 
+}
+
+    form h2 {
+      color: white;
+      text-align: center;
+      margin: 0;
+      font-size: 25px;
+      padding-bottom: 25px; 
+    }
+
+    form p {
+      padding-bottom: 5px;
+      font-size: 20px;
+      color: white;
+      font-weight: 500%; 
+    }
+
+    form .checkbox_news {
+      display: inline-flex; 
+    }
+    
+    form .checkbox_news small {
+      padding-left: 10px;
+      font-size: 15px;
+      color: white; 
+    }
+  
+  .form__1 input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-shadow: black 0 2 15 1; 
+}
+  
+  textarea {
+    resize: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    height: 200px;
+    color: white; 
+}
+  
+  .form__1 input {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: rgb(255, 255, 255);
+    padding: 15px; 
+}
+/* <------Contacto------> */
+
+/* responsive */
+
+@media (max-width: 768px) { 
+    /* index */
+.bannerImg{
+    display: none;
+}
+
+.banner{
+    background-image: url(../assets/img/TabletImmg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.list {
+    justify-content: center;
+    
+}
+/* final index */
+
+/* talens */
+
+.txt  {
+    margin: 0px;
+    width: 100%;
+    padding: 20px;
+}
+}
+
+/* final talens */
+
+@media (max-width: 500px) {
+    .banner {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(../assets/img/phoneImg.jpg);
+    }
+
+    .hamburger-menu {
+        display: block;
+      }
+    .list {
+        display: none;
+    }
+
+    /* contacto */
+  .form_contacto {
+    width: 320px;
+    padding-top: 50px; }
+  /* contacto */
+}
+
+@media (max-width: 375px) {
+    .banner {
+        background-image: url(../assets/img/Phone375.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .banner {
+        background-image: url(../assets/img/Phone320.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
