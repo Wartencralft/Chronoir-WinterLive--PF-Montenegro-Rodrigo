@@ -1,0 +1,106 @@
+/* responsive */
+
+@media (max-width: 1024px) {
+  .talents {
+      flex-wrap: wrap;
+  }
+  p {
+      margin-left: 0px;
+      height: auto;
+      margin: 40px;
+  }
+  .navbar_list {
+    display: flex;
+    justify-content: center;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+}
+
+@media  (max-width: 768px) { 
+    /* index */
+.bannerImg{
+    display: none;
+}
+
+.banner{
+    background-image: url(../assets/img/TabletImmg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navbar_list {
+  display: flex;
+  justify-content: center;
+    
+}
+
+.kuzuha {
+  height: 700px;
+}
+
+.kanae {
+  height: 700px;
+
+}
+
+}
+
+/* final talens */
+
+@media (max-width: 500px) {
+    .banner {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(../assets/img/phoneImg.jpg);
+    }
+
+    .hamburger-menu {
+        display: block;
+      }
+    .navbar_list {
+        display: none;
+    }
+
+    header {
+      justify-content: right;
+    }
+
+    /* contacto */
+  .form_contacto {
+    width: 320px;
+    padding-top: 50px; }
+  /* contacto */
+
+  /* Tienda */
+  .product-container {
+    grid-template-columns: 1fr;
+  }
+  .logo {
+    display: none;
+  }
+ 
+}
+
+@media (max-width: 375px) {
+    .banner {
+        background-image: url(../assets/img/Phone375.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .logo {
+      display: none;
+    }
+}
+
+@media (max-width: 320px) {
+    .banner {
+        background-image: url(../assets/img/Phone320.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .logo {
+      display: none;
+    }
+}

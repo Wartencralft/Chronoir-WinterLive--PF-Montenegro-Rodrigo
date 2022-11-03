@@ -1,0 +1,16 @@
+// components
+@import './components/variables';
+@import './components/header';
+@import './components/global';
+@import './components/footer';
+
+// google font
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&display=swap');
+
+// pages
+@import './pages/talent.profile';
+@import './pages/contacto';
+@import './pages/tienda';
+
+// media query 
+@import './components/mediaqueries';

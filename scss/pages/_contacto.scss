@@ -1,0 +1,67 @@
+/* <------Contacto------> */
+.titulo {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Noto Sans', sans-serif;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    
+}
+
+.backgroundImg {
+    background-image: url(../assets/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form {
+  
+  width: 585px;
+  margin: auto;
+  padding: 10px 20px;
+
+  h2 {
+      color: white;
+      text-align: center;
+      margin: 0;
+      font-size: 25px;
+      padding-bottom: 25px;
+  }
+  p {
+      padding-bottom: 5px;
+      font-size: 20px;
+      color: white;
+      font-weight: 500%;
+  }
+
+  .checkbox_news {
+      display: inline-flex;
+  }
+  .checkbox_news small {
+      padding-left: 10px;
+      font-size: 15px;
+      color: white;
+  }
+}
+  
+  .form__1 input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-shadow: black 0 2 15 1; 
+}
+  
+  textarea {
+    resize: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    height: 200px;
+    color: white; 
+}
+  
+  .form__1 input {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: rgb(255, 255, 255);
+    padding: 15px; 
+}
+/* <------Contacto------> */
