@@ -121,6 +121,16 @@ header {
   background-color: black; }
 
 /* footer */
+.banner {
+  object-fit: cover;
+  background-repeat: no-repeat;
+  width: auto;
+  height: 900px; }
+
+.bannerImg {
+  width: 100%;
+  height: 100%; }
+
 /* Talents */
 .talents {
   padding: 10px;
@@ -282,16 +292,6 @@ textarea {
   transition: 1 ease; }
 
 /* Final Tienda */
-.banner {
-  object-fit: cover;
-  background-repeat: no-repeat;
-  width: auto;
-  height: 900px; }
-
-.bannerImg {
-  width: 100%;
-  height: 100%; }
-
 /* responsive */
 @media (max-width: 1024px) {
   .talents {
@@ -347,7 +347,7 @@ textarea {
 
 @media (max-width: 375px) {
   .banner {
-    background-image: url(../assets/img/Phone375.jpg);
+    background-image: url(../assets/img/Phone320.png);
     background-size: cover;
     background-repeat: no-repeat; }
   .logo {

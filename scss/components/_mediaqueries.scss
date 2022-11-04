@@ -83,24 +83,12 @@
 }
 
 @media (max-width: 375px) {
-    .banner {
-        background-image: url(../assets/img/Phone375.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .logo {
-      display: none;
-    }
+
+  @include phoneImg
+  
 }
-
 @media (max-width: 320px) {
-    .banner {
-        background-image: url(../assets/img/Phone320.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
 
-    .logo {
-      display: none;
-    }
+  @include phoneImg
+
 }

@@ -7,3 +7,18 @@
 }
 /* Reset, eliminar estilos de navegadores, border box para evitar scroll horizontal */
 
+// mixins
+
+@mixin phoneImg {
+
+    .banner {
+        background-image: url(../assets/img/Phone320.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .logo {
+      display: none;
+    }
+    
+}
