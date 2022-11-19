@@ -110,8 +110,8 @@ header {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  text-decoration: none;
-  list-style: none; }
+  text-decoration: none !important;
+  list-style: none !important; }
 
 /* Reset, eliminar estilos de navegadores, border box para evitar scroll horizontal */
 /* footer */
@@ -121,6 +121,9 @@ header {
   background-color: black; }
 
 /* footer */
+body {
+  background-color: #140113 !important; }
+
 .banner {
   object-fit: cover;
   background-repeat: no-repeat;
@@ -130,6 +133,44 @@ header {
 .bannerImg {
   width: 100%;
   height: 100%; }
+
+.official-store-twitter {
+  margin-bottom: 24px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center; }
+
+.official-store__styledOficcial {
+  max-width: 500px; }
+
+.section-tittle {
+  margin-bottom: 4vw;
+  text-align: center; }
+
+.official-store-wrapper {
+  height: 44vw;
+  max-height: 760px;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-box-align: center;
+  align-items: center; }
+
+.official-store-item {
+  max-width: 574px;
+  margin-bottom: 10px;
+  max-height: 237px;
+  display: inline-block; }
+
+.official-store-item img {
+  border-radius: 5px; }
+
+.line {
+  border-left: 1px solid #cf0d0d;
+  margin: 50px; }
+
+.twitter-styledofficial {
+  width: 490px;
+  max-width: 570px; }
 
 /* Talents */
 .talents {
@@ -246,8 +287,7 @@ textarea {
   border-radius: 5px; }
 
 .card .text {
-  text-align: left;
-  margin-left: 2em;
+  text-align: center;
   margin-bottom: 0.5em;
   font-size: 20px; }
 
@@ -292,6 +332,22 @@ textarea {
   transition: 1 ease; }
 
 /* Final Tienda */
+#galeria .col-lg-6 {
+  margin: 0 !important;
+  padding: 15px; }
+
+#galeria img {
+  width: 100%; }
+
+#galeria img:hover {
+  border: 5px solid #000; }
+
+#galeria h1 {
+  color: white; }
+
+#galeria p {
+  color: white; }
+
 /* responsive */
 @media (max-width: 1024px) {
   .talents {
@@ -304,12 +360,27 @@ textarea {
     display: flex;
     justify-content: center; }
   .hamburger-menu {
-    display: none; } }
+    display: none; }
+  .line {
+    margin: 15px; } }
 
 @media (max-width: 768px) {
   /* index */
   .bannerImg {
     display: none; }
+  .line {
+    display: none; }
+  .official-store-twitter {
+    flex-wrap: wrap;
+    text-align: center; }
+  .twitter-styledofficial {
+    margin-top: 350px;
+    width: 500px;
+    padding: 10px;
+    text-align: center; }
+  .official-store-item img {
+    width: 500px; }
+  /* final index */
   .banner {
     background-image: url(../assets/img/TabletImmg.jpg);
     background-size: cover;
@@ -328,6 +399,19 @@ textarea {
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../assets/img/phoneImg.jpg); }
+  .line {
+    display: none; }
+  .official-store-twitter {
+    flex-wrap: wrap;
+    text-align: center; }
+  .twitter-styledofficial {
+    margin-top: 300px;
+    width: 300px;
+    padding: 10px;
+    text-align: center; }
+  .official-store-item img {
+    width: 300px; }
+  /* index final*/
   .hamburger-menu {
     display: block; }
   .navbar_list {

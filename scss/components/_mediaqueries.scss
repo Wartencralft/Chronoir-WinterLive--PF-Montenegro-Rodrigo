@@ -16,6 +16,10 @@
   .hamburger-menu {
     display: none;
   }
+
+  .line {
+    margin: 15px;
+  }
 }
 
 @media  (max-width: 768px) { 
@@ -24,6 +28,27 @@
     display: none;
 }
 
+.line {
+  display: none;
+}
+
+.official-store-twitter {
+  flex-wrap: wrap;
+  text-align: center;
+}
+.twitter-styledofficial {
+  margin-top: 350px;
+  width: 500px;
+  padding: 10px;
+  text-align: center;
+  
+}
+.official-store-item img {
+  width: 500px;
+}
+
+
+/* final index */
 .banner{
     background-image: url(../assets/img/TabletImmg.jpg);
     background-size: cover;
@@ -54,6 +79,26 @@
         background-repeat: no-repeat;
         background-image: url(../assets/img/phoneImg.jpg);
     }
+
+    .line {
+      display: none;
+    }
+    
+    .official-store-twitter {
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    .twitter-styledofficial {
+      margin-top: 300px;
+      width: 300px;
+      padding: 10px;
+      text-align: center;
+    }
+    .official-store-item img {
+      width: 300px;
+    }
+
+    /* index final*/
 
     .hamburger-menu {
         display: block;
